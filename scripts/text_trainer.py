@@ -2021,7 +2021,7 @@ def create_config(task_id, model, dataset, dataset_type, file_format, output_dir
 
         config = customize_config(config, task_type, model, model_path, all_params)
 
-        config = get_learning_rate(config, task_type, trainable_params)
+        # config = get_learning_rate(config, task_type, trainable_params)
 
     except Exception as e:
         print(f"Error checking and logging base model size: {e}")
